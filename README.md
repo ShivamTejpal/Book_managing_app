@@ -7,9 +7,14 @@ a collection of books. The application should allow users to perform the followi
 4. Delete a book
 
 Steps-
-Create a backend folder 
+Create a backend folder
+
 -initialize a node project(npm init)
 -put a package.json
 -install express 
 -make index.js,types.js(for zod inputs)-npm install zod
 -add BE zod validation
+
+step 2 
+add mongoose
+create schema
