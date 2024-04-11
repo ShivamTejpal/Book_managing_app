@@ -19,6 +19,7 @@ step - 2
 
 1) add mongoose
 2) create schema
+3) add cors
 
 step - 3
 1) create frontend

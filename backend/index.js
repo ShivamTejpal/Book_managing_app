@@ -2,6 +2,7 @@ const express = require('express');
 const { addBook, updateBook } = require('./types');
 const { book_app } = require('./db');
 const app = express()
+const cors= require("cors")
 
 app.use(express.json());
 

@@ -1,7 +1,13 @@
-export function Books(){
+
+export function Books({books}){
     return <div>
-        <h1>Atomic Habbits</h1>
-        <h2>This book tells us how small changes can change our life</h2>
-        <button>Mark as read</button>
+    {books.map(function(books){
+        return <div>
+            <h1>{books.title}</h1>
+            <h2>{books.description}</h2>
+            <button>{books.completed == true ? "Completed":"Mark as Completed"}</button>
+
+        </div>
+    })}
     </div>
 }

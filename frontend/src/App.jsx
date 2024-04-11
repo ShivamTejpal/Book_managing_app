@@ -1,18 +1,29 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { AddBook } from '../components/AddBook'
 import { Books } from '../components/Books'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [books, setbooks] = useState([]);
 
+
+  fetch("http://localhost:3000/books")
+  .then(async function(res){
+    const json = await res.json();
+    setbooks(json.books);
+  })
   return (
     
       <div>
         <AddBook/>
-        <Books/>
+        <Books books={[
+          {
+            title:"Atomic Habbits",
+            description:"fgaga",
+            completed:false,
+          }
+        ]}></Books>
+      
       </div>
       
   )
