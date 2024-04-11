@@ -15,6 +15,7 @@ Create a backend folder
 -make index.js,types.js(for zod inputs)-npm install zod
 -add BE zod validation
 
-step 2 
-add mongoose
-create schema
+step - 2 
+
+1) add mongoose
+2) create schema
