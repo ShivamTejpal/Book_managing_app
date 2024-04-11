@@ -19,3 +19,7 @@ step - 2
 
 1) add mongoose
 2) create schema
+
+step - 3
+1) create frontend
+2) add dependencies
