@@ -23,3 +23,4 @@ step - 2
 step - 3
 1) create frontend
 2) add dependencies
+3) add a components folder (add components init)
